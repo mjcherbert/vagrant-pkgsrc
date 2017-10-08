@@ -1,0 +1,13 @@
+moduledir 'dist'
+
+mod 'mjcherbert-pkgsrc',
+  :git => 'https://github.com/mjcherbert/puppet-pkgsrc',
+  :branch => 'master'
+
+mod 'puppet-archive',
+  :git => 'https://github.com/voxpupuli/puppet-archive',
+  :tag => 'v2.0.0'
+  
+mod 'puppetlabs-stdlib',
+  :git => 'https://github.com/puppetlabs/puppetlabs-stdlib',
+  :tag => 'v2.2.1'
