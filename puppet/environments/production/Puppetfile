@@ -8,6 +8,10 @@ mod 'puppet-archive',
   :git => 'https://github.com/voxpupuli/puppet-archive',
   :tag => 'v2.0.0'
   
+mod 'puppetlabs-ntp',
+  :git => 'https://github.com/puppetlabs/puppetlabs-ntp',
+  :tag => '6.3.0'
+
 mod 'puppetlabs-stdlib',
   :git => 'https://github.com/puppetlabs/puppetlabs-stdlib',
-  :tag => 'v2.2.1'
+  :tag => '4.20.0'

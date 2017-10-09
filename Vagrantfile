@@ -65,8 +65,12 @@ Vagrant.configure("2") do |config|
   # Puppet, Chef, Ansible, Salt, and Docker are also available. Please see the
   # documentation for more information about their specific syntax and use.
   config.vm.provision "shell", inline: <<-SHELL
+    wget -O /var/tmp/puppet5-release-xenial.deb https://apt.puppetlabs.com/puppet5-release-xenial.deb
+    dpkg -i /var/tmp/puppet5-release-xenial.deb
     apt-get update
-    apt-get install -y puppet
+#   apt-get upgrade -y
+    apt-get install puppet-agent
+    ln -sf /opt/puppetlabs/bin/puppet /usr/local/bin/puppet
   SHELL
 
   # r10k plugin to deploy puppet modules

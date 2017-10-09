@@ -1,3 +1,3 @@
 node default {
-  notify { 'hello world': }
+  class { '::ntp': }
 }
